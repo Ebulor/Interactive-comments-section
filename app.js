@@ -33,7 +33,7 @@ function createComments(data) {
                 <p class="text">${data[i].comments[k].content}</p>
                 <div class="profile-info">
                   <img src="${data[i].comments[k].user.image}" class="profile-img" alt="user image">
-                  <h4>${data[i].comments[k].user.username}</h4>
+                  <p class="username">${data[i].comments[k].user.username}</p>
                   <p class="time-posted">${data[i].comments[k].createdAt}</p>
                   <div class="btns">
                     <button class="reply-btn main-reply-btn">Reply</button>
@@ -75,7 +75,9 @@ function createComments(data) {
                     <img src="${
                       data[i].comments[k].replies[j].user.image
                     }" class="profile-img" alt="user image">
-                    <h4>${data[i].comments[k].replies[j].user.username}</h4>
+                    <p class="username">${
+                      data[i].comments[k].replies[j].user.username
+                    }</p>
                     ${
                       data[i].comments[k].replies[j].user.username ===
                       "juliusomo"
@@ -198,7 +200,7 @@ function mainUser() {
             <div class="content">
               <div class="profile-info">
                 <img src="./images/avatars/image-juliusomo.png" class="profile-img" alt="white male headshot">
-                <h4>juliusomo</h4>
+                <p class="username">juliusomo</p>
                 <p class="user-tag">you</p>
                 <p class="time-posted">Today</p>
                 <div class="btns">
@@ -283,7 +285,7 @@ function replyingComments(e) {
             <div class="content">
               <div class="profile-info">
                 <img src="./images/avatars/image-juliusomo.png" class="profile-img" alt="white male headshot">
-                <h4>juliusomo</h4>
+                <p class="username">juliusomo</p>
                 <p class="user-tag">you</p>
                 <p class="time-posted">Today</p>
                 <div class="btns">
