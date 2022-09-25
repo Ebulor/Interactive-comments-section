@@ -124,9 +124,11 @@ main {
 .profile-img {
   width: 30px;
 }
-.profile-info h4 {
-  font-size: 14px;
+.profile-info .username {
+  font-size: 15px;
   margin: 0 10px;
+  font-weight: bold;
+  color: var(--Darkblue);
 }
 .time-posted {
   font-size: 15px;
@@ -285,7 +287,7 @@ main {
   bottom: 20px;
 }
 .main-user-reply .score,
-.main-user-reply h4,
+.main-user-reply .username,
 .main-user-reply .user-tag,
 .main-user-reply .time-posted,
 .main-user-reply .delete-btn,
@@ -336,7 +338,7 @@ main {
   background-color: var(--Lightgrayishblue);
 }
 .replied-comment .score,
-.replied-comment h4,
+.replied-comment .username,
 .replied-comment .user-tag,
 .replied-comment .time-posted,
 .replied-comment .delete-btn,
